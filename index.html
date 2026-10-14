@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個 GitHub 網頁</title>
+    <style>
+        /* 基礎樣式與漸層背景 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* 卡片容器樣式 */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 標題與文字 */
+        h1 {
+            color: #4a00e0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* 按鈕樣式 */
+        .btn {
+            display: inline-block;
+            background: #8e2de2;
+            background: linear-gradient(to right, #4a00e0, #8e2de2);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 0, 224, 0.3);
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* 頁尾小小字 */
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎉 Hello GitHub Pages!</h1>
+        <p>恭喜你！這是我透過瀏覽器直接拖曳上傳，並成功在 GitHub 部署的第一個靜態網頁。</p>
+        
+        <!-- 點擊會觸發 JavaScript 互動 -->
+        <button class="btn" onclick="celebrate()">點擊慶祝一下</button>
+        
+        <div class="footer">Built with HTML & CSS & JS</div>
+    </div>
+
+    <script>
+        // JavaScript 簡單互動效果
+        function celebrate() {
+            alert('🥳 太棒了！網站運作一切正常！\n快把這個網址分享給你的朋友們吧！');
+        }
+    </script>
+
+</body>
+</html>
